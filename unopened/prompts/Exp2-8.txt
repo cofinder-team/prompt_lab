@@ -1,0 +1,40 @@
+
+Please determine if the product is unopened by examining the {title} and {content}.
+If there are any indications of the product being opened, the answer should be FALSE.
+
+"Unopened item" refers to a new product that the seller has not previously opened and has maintained its original packaging.
+This means that the item has not been used or opened and remains in a completely new condition at the time of sale.
+An unopened item should retain the original packaging provided by the manufacturer or distributor and must be in an unopened state from the moment it is first purchased in the market.
+
+Sample 1.
+---
+Title : 맥북프로 m2 고급형 16인치 1tb 팝니다.
+Content : 미개봉 제품이며 맥북프로 m2 고급형 16인치 12코어cpu 19코어 gpu 16GB RAM 1TB SSD입니다. 안양이나 의왕 동탄 봉담 서울 시청에서 직거래 원합니다. 쪽지나 연락 주세요
+Answer : TRUE
+ * TRUE beacuse there is no clue to opening the product.
+---
+
+Sample 2.
+---
+Title : 애플 M1 max 맥북 프로 14인치 32코어 GPU 램 64기가 CTO 판매 또는 교환합니다 (윈도 노트북)
+Content : 애플 맥북프로 14인치 M1 MAX CPU 10코어 GPU 32코어 CTO 풀옵 스펙 CPU, 램 64기가. 아이클라우드를 쓰기에 저장소만 512기가 ssd로 최고 스펙의 CTO 스페이스 그레이 모델입니다. 1년 미만 구매로 사용감 및 외상 전혀 없으며 (배터리 사이클 27회, 효율 100%, 신품급) 같이 구매한 로지텍 MX마우스 for mac 포함입니다 마찬가지로 새상품 급 상태입니다 맥북과 최상의 세트라고 생각합니다. 판매가는 360만원에 팝니다. (479만원) 교환은 갤럭시북 프로3나 기타 윈도 노트북 워크스테이션 사향 가능하니 추가금 같이 문자로 스펙주세요 :) 서울 경기 수도권 등 직거래 가능하며 그 외 지역은 협의가 필요할 것 같습니다. 가능한 직거래 원합니다. 그럼 연락주세요.
+Answer : FALSE
+ * FALSE because there is a clue to opening the product. example, 1년 미만 구매로 사용감 및 외상 전혀 없으며 (배터리 사이클 27회, 효율 100%, 신품급)
+---
+
+Sample 3.
+---
+Title : 맥북에어 m2 실버, 512gb, 24gb ram
+Content : 사실상 거의 사용 안한 맥북에어 m2, 실버/512gb/24gb ram 풀박스 판매합니다.(cpu 8 gpu10) 24gb 램이라 페러럴즈 사용시 거의 램이 딱 맞았습니다. 사용감 없는 수준이고 실버모델이라 특히 더 새상품이랑 외관상 차이는 없습니다. 서피스 프로 사용중으로 사용 빈도가 거의 없어 판매합니다.(배터리 사이클 8) 3월 구매, 3월 개봉이고 1년 보증 2024년 3.8. 까지입니다. 세종시 직거래 가능하고, 택배시 무료 발송하겠습니다. 거래내역 매우 많으니 아이디 확인 바랍니다. 게시글 유지시, 계속 판매중입니다.
+Answer : FALSE
+ * FALSE because there is a clue to opening the product. example, 배터리 사이클 8, 거의 사용 안한, 사용 빈도가 거의 없어 판매합니다., 3월 개봉이고 1년 보증 2024년 3.8. 까지입니다.
+---
+
+Test Data
+---
+Title : {title}
+Content : {content}
+Answer :
+---
+
+The answer must be either "TRUE" or "FALSE".
