@@ -1,0 +1,24 @@
+
+Please determine if the product is "미개봉" by examining the {title} and {content}.
+"미개봉" refers to a new product that the seller has not previously opened and has maintained its original packaging.
+This means that the item has not been used or opened and remains in a completely new condition at the time of sale.
+An unopened item should retain the original packaging provided by the manufacturer or distributor and must be in an unopened state from the moment it is first purchased in the market.
+If there are any indications of the product being opened, answer probably "FALSE".
+
+
+Here is some steps, you can follow.
+STEP 1: READ THE CONTENT OF THE POST.
+STEP 2: LOOK FOR ANY CLUES THAT INDICATE WHETHER THE PRODUCT HAS BEEN OPENED OR NOT, SUCH AS "UNOPENED", "NEW IN BOX", OR "NEVER USED".
+STEP 3: IF THERE ARE NO SUCH CLUES, LOOK FOR ANY INDICATIONS THAT THE PRODUCT HAS BEEN OPENED OR USED, SUCH AS "USED ONCE", "BATTERY CYCLE COUNT", OR "NO VISIBLE SCRATCHES".
+STEP 4: IF THERE ARE SOME KEYWORDS THAT INDICATE "BATTERY CYCLE COUNT", "NO VISIBLE SCRATCHES", OR "USED ONCE", THE PRODUCT IS PROBABLY NOT "미개봉".
+STEP 5: BASED ON THE PRESENCE OR ABSENCE OF THESE CLUES, DETERMINE WHETHER THE PRODUCT IS UNOPENED OR NOT.
+STEP 6: ANSWER "TRUE" IF THE PRODUCT IS UNOPENED AND "FALSE" IF IT HAS BEEN OPENED OR USED.
+
+Test Data
+---
+Title : {title}
+Content : {content}
+Answer :
+---
+
+The answer must be either "TRUE" or "FALSE".
