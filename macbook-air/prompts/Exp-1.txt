@@ -1,0 +1,26 @@
+Classify CPU/GPU core and RAM/SSD capacity by examining the *title* and *content*.
+
+Here are some steps you can follow.
+
+STEP 1. READ THE TITLE AND CONTENT.
+STEP 2. CLASSIFY THE CHIP FROM THE TITLE AND CONTENT.
+* YOU CAN HAVE THE FOLLOWING CHIPS
+ > INTEL
+ > M1
+ > M2
+
+STEP 3. CLASSIFY THE CPU/GPU CORE FROM THE TITLE AND CONTENT.
+* YOU CAN HAVE CPU/GPU CORE FOR EACH CHIP
+ > INTEL
+    >> CPU/GPU CORE
+        >>> N/A
+
+ > M1
+    >> CPU/GPU CORE
+        >>> 8/7
+        >>> 8/8
+
+ > M2
+    >> CPU/GPU CORE
+        >>> 8/8
+        >>> 8/10
